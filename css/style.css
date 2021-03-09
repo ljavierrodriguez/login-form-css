@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@1,900&display=swap');
+/* 
+Definicion de Colores
+*/
+:root {
+    --bg-body: #f2e3e3;
+    --bg-column-right: #fa445a;
+    --text-color: #a5b3be;
+    --text-color-icons: #272528;
+    --text-color-title: #272528;
+    --bg-input: #efefef;
+    --bg-button-login: #fa4c23;
+    --bg-button-login-hover: #Be2b08;
+}
+
+body {
+    background-color: var(--bg-body);
+}
+
+.loginForm {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 5px #a5b3be;
+    height: 400px;
+    margin: 50px auto;
+    width: 700px;
+}
+
+.loginForm .column-left {
+    align-items: center;
+    display: flex;
+    color: var(--text-color);
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    float: left;
+    height: 400px;
+    justify-content: center;
+    width: 50%;
+}
+
+.loginForm .column-left h1{
+    color: var(--text-color-title);
+}
+
+.loginForm .column-left .social{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0 40px 0;
+    text-align: center;
+    width: 20%;
+    color: var(--text-color-icons);
+}
+
+.loginForm .column-left input{
+    background-color: var(--bg-input);
+    border: 0;
+    margin: 5px 0;
+    padding: 5px;
+    width: 75%;
+    outline: none;
+}
+.loginForm .column-left input::placeholder{
+    color: var(--text-color);
+}
+
+.loginForm .column-left a{
+    text-decoration: none;
+    color: var(--text-color);
+    margin: 10px 0 10px;
+}
+
+.loginForm .column-left button{
+    background-color: var(--bg-button-login);
+    border: 0;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    margin: 2px 0;
+    padding: 10px 40px;
+}
+
+.loginForm .column-left button:hover{
+    background-color: var(--bg-button-login-hover);
+}
+
+.loginForm .column-right {
+    align-items: center;
+    background-color: var(--bg-column-right);
+    border-radius: 0 10px 10px 0; /* tl tr br bl */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    height: 400px;
+    justify-content: center;
+    width: 50%;
+}
+
+.loginForm .column-right h1, .loginForm .column-right p{
+    text-align: center;
+}
+
+.loginForm .column-right p{
+    width: 75%;
+}
